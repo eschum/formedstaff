@@ -1,0 +1,6 @@
+.vscode
+deploy
+static/images
+Pipfile
+Pipfile.lock
+config.py

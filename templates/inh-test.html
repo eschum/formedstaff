@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- header menu - nav -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">#SnacksForMedStaff</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Our Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="progress.html">Progress To Date</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact Us!</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+
+        <div class="padding"></div>
+        <div class="padding"></div>
+        
+        <!-- Team Members section -->
+        <div class="container-fluid padding">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form action="/submit" method="POST">
+                        <div class="form-group">
+                            <label for="hospName">Hospital Name</label>
+                            <input type="text" class="form-control" id="hospname" placeholder="Enter Name" 
+                            name="hospital_name">
+                            {% if message %}
+                            <small id="message" class="form-text al">{{ message | safe }}</small>    
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            <label for="contactName">Contact Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Name" name="contact_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Contact Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" 
+                            placeholder="Enter Email" name="contact_email">
+                            <small id="emailHelp" class="form-text text-muted">We don't share or sell contact information.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Contact Phone Number</label>
+                            <input type="text" class="form-control" id="contactPhone" placeholder="Enter Phone Number" 
+                            name="contact_phone">
+                            <small id="emailHelp" class="form-text text-muted">We don't share or sell contact information.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="commentField">Comments / Additional Information</label>
+                            <textarea class="form-control" id="commentField" rows="3" name="comment_field"></textarea>
+                        </div>
+
+
+                       
+                        <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Example - if we need a checkbox?</label>
+                        </div>
+                        <div class="padding"></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+{% endblock %}

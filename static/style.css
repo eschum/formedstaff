@@ -1,0 +1,345 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /*color: #222; /*Dark-grey; a bit lighter than black*/
+    /*Try to color All text with green */
+    color: #00B964;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto !important;
+}
+
+.partner {
+    width: 90%;
+}
+
+.border {
+    box-shadow: 1px 1px #b4b4b4;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 0px;
+}
+
+.navbar {
+    padding: 0.7rem;
+    background-color: #00B964;
+    border-color: #00B964;
+}
+
+a {
+    color: #00B964;
+}
+}
+
+.navbar-nav li {
+    padding-right: 1.3rem;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+    width: 75%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%; /*push upwards*/
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+
+}
+
+hr {
+    border-top: 2px solid #b4b4b4; /*mid-dark grey*/
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #00B964;
+    border: 1px solid #00B964;
+}
+
+.btn-primary:hover {
+    background-color: #829550;
+    border: 1px solid #829550;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+    background-color: #00B964;
+    color: #FFFFFF;
+    font-weight: 50;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.hospital {
+    border-style: solid;
+    vertical-align: middle;
+}
+
+.al {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.states h5{
+    color: #FFFFFF;
+    font-weight: 50;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr {
+    border-top: 2px solid #b4b4b4; /*mid-dark grey*/
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+
+.fa-instagram {
+    color: #517fa8;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus-g:hover, .fa-instagram:hover, .fa-youtube:hover {
+    color: #d5d5d5;
+} 
+
+.footer-copyright {
+    background-color: #00B964;
+    color: #FFFFFF;
+}
+
+.card-header {
+    background-color: #00B964;
+    padding: 0.2rem;
+}
+
+
+
+.faq {
+    font-weight: 20;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.hlist ul {
+    text-align: center;
+    list-style: inside;
+}
+.hlist li {
+    list-style-type: none;
+}
+
+thead {
+    background-color: #00B964;
+    color: #FFFFFF;
+}
+
+.j2 {
+    width: 70%;
+    text-align: center;
+}
+
+.card-block {
+    margin: 0.5rem;
+    /*margin-top: 0.3rem;
+    margin-bottom: 0.3rem;*/
+}
+
+.card {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.bottom {
+    padding-top: 1rem;
+}
+
+/*media query*/
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px; 
+    }
+    .display-5 {
+        font-size: 150%;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.1rem;
+    }
+
+    .top {
+        padding-bottom: 1rem;
+    }
+
+    .mobtextspace {
+        padding-top: 1rem;
+    }
+
+    .partner {
+        width: 95%;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px; 
+    }    
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel-inner img {
+        width: 95%;
+        height: 100%;
+    }
+
+    .display-5, h3 {
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    .lead {
+        font-size: 80%;
+    }
+
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+
+    .top {
+        padding-bottom: 1rem;
+    }
+
+    .table-hover {
+        font-size: 0.7rem;
+    }
+
+    .jhlab {
+        padding-top: 1rem;
+    }
+
+    .welcomemobtextspace {
+        padding-top: 3rem;
+    }
+
+    h5 {
+        font-size: 100%;
+    }
+
+    .mobtextspace {
+        padding-top: 1rem;
+    }
+
+    .partner {
+        width: 95%;
+    }
+
+    .partner-img {
+        width: 85%;
+    }
+
+
+    
+}
+
+/*fix for firefox*/

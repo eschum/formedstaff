@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- header menu - nav -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">#SnacksForMedStaff</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/progress">Progress</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="/suggest">Suggest Hospital</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="/partners">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        
+        
+        <!-- Welcome section, and different columns.   -->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h3 >Partners</h1>  
+                </div>
+                <hr>
+               <!--<div class="col-12">
+                    <p class="lead">Giving Back To The Community During COVID-19</p>
+                </div>-->
+            </div>
+        </div>   
+
+        <div class="container-fluid padding partner">
+        <div class="row mb-2">
+            <!--Parter #1-->
+            <div class="col-12">
+                <div class="row no-gutters border rounded overflow-hidden mb-4 shadow-sm h-md-250 position-relative mg">  
+                    <div class="col-lg-6 my-auto">
+                            <a href="http://www.burgerchanhtx.com/"><img class="" width="200" height="56" src="../static/images/BCL.jpg"></i></a>
+                            <p class="card-text mb-auto">Diane and Willet Feng are two Rice graduates. They opened a fast-casual burger restaurant called burger-chan, nee Kuma Burgers, back in April of 2016, and soon garnered critical acclaim from food writers and the general public for their umami-forward burgers and creative toppings, sauces, and shake flavors.  Houston Chronicle food critic Alison Cook gave burger-chan’s burger an A+ in her “Burger Friday” segment, and she has included burger-chan in her list of top 100 Houston restaurants for the past four years.  CultureMap food editor Eric Sandler listed burger-chan as #25 of the Top 100 Restaurants in Houston for 2019.</p>                    
+                            <br>
+                            
+                            </div>
+                            <!-- Images Display -->       
+                            <div class="col-lg-6 d-block my-auto mx-auto text-center">
+                                <img class="partner-img d-block mx-auto my-auto" width="80%" height="80%" src="../static/images/BC1.jpg"><title>Placeholder</title></img>
+                            </div>
+
+                        <div class="col my-auto"><p class="card-text mb-auto">Burger-chan is located in an underground food court in Greenway Plaza and serves as an amenity for the Greenway Plaza office workers.  Since their built-in office clientele are mostly working from home due to COVID-19, their business took a big hit.  Burger-chan is currently operating with a limited staff and limited menu available for takeout, curbside pickup, and in-house delivery within an 8-mile radius.</p>
+                            
+                    <p>Since their building is locked from the outside, burger-chan is completely hidden from street view, they have to pro-actively reach out to our supporters and the community in order to drum up business.  They appreciate every single order that comes in every single day.</p>      
+                    <b><a href="http://www.burgerchanhtx.com/" class="stretched-link">Learn More and Order From burger-chan!</a></b>                    
+                </div>
+                </div>
+            </div>
+
+            <!--Parter #1-->
+            <div class="col-12">
+                <div class="row no-gutters border rounded overflow-hidden mb-4 shadow-sm h-md-250 position-relative mg">
+                        
+                    <div class="col-lg-6 my-auto">
+                            <h5 class="mb-0"><b>Elite Events Houston</b></h5>
+                            <br>
+                            <p class="card-text mb-auto">For all our Rice Owls whom have had events at the Anderson Family Commons Center in the Jones Business School, do you remember the amazing staff that served all the food? That was Joe Garcia and his team who work for his 
+                                company Elite Events Houston! Elite Events Houston is a small local business and has been serving Rice for 3 years. Joe himself has been working in the industry for 20 years. 
+                                Elite Events use their expertise in delivery and catering to bring outstanding quality to how food is served at the Rice Jones Business School. Now that Rice has temporarily 
+                                closed its doors to in person classes, his team is going to help us deliver our Houston meals! Donation money will be going toward Joe and his team to deliver our Houston orders. </p>
+                                <br>
+                            </div>
+                            <!-- Images Display -->       
+                            <div class="col-lg-6 d-block my-auto mx-auto">
+                                <img class="partner-img d-block mx-auto my-auto" width="80%" height="80%" src="../static/images/EEH.jpg"><title>Placeholder</title></img>
+                            </div>
+                            <div class="col my-auto">
+                                <p><b>Interested in potentially contracting Joe’s team for a catering event? You can reach out to him at <a href="mailto:jgarcia2093@comcast.net">jgarcia2093@comcast.net</a></b></p>
+                            </div>
+                </div>
+            </div>        
+        </div>
+        </div>
+
+        <div class="padding"></div>
+        <div class="padding"></div>
+        
+        <footer class="container-fluid"><div class="footer-copyright text-center py-3 fixed-bottom">© 2020 Coco Ma and Kathy Harcourt</div></footer>
+        
+{% endblock %}
