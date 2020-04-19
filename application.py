@@ -7,14 +7,22 @@ import pandas as pd
 import plotly
 import plotly.graph_objects as go
 import json
-df = pd.read_csv('../static/mapdata.csv')
+df = pd.read_csv('static/mapdata.csv')
 
 for col in df.columns:
+    if col == 'packages' or col =='hosp_count':
+        df[col] = df[col].astype(int)
     df[col] = df[col].astype(str)
 
+df = df.dropna(axis=0)
+df = df.dropna(axis=1)
+df.reset_index(drop=True)
+print(df)
+
+
 df['text'] = df['packages'] + ' Packages' + '<br>' + \
-    df['state'] + '<br>' + df['hosp_count'] + ' Hospitals' + '<br>' + \
-    df['spend'] + 'Spent' + '<br>' + 'Hospitals Served: ' + '<br>' + df['hospitals']
+    df['state'] + '<br>' + df['spend'] + ' Spent' + '<br><br>' + \
+    'Hospitals Served (' + df['hosp_count'] + '):' + '<br>' + df['hospitals']
 
 #have a state variable to test whether or not the plot is loaded
 #graph_loaded = False
@@ -90,7 +98,8 @@ def map_test():
     
     fig = go.Figure(data=go.Choropleth(
         locations=df['code'],
-        z=df['packages'].astype(int),
+        z=df['packages'].astype(float),
+        hoverinfo = "location+text",
         locationmode='USA-states',
         colorscale='Greens',
         autocolorscale=False,
@@ -107,9 +116,9 @@ def map_test():
             showlakes=True, # lakes
             lakecolor='rgb(255, 255, 255)'),
     )
-    
+
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('test-graph.html', plot=graphJSON)
+    return render_template('progress-test.html', plot=graphJSON)
 
 
 if __name__ == '__main__':

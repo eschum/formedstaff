@@ -227,6 +227,10 @@ thead {
     padding-top: 1rem;
 }
 
+.chart {
+    margin-top: 0rem;
+}
+
 /*media query*/
 @media (max-width: 992px) {
     .social a {

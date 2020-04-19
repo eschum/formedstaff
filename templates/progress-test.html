@@ -38,13 +38,19 @@
                     <h3 class="display-5">Who We Are Helping</h3>
                 </div>
                 <hr>
-                <div class="col-12">
-                    <p class="lead">Packages, Spend, and Hospitals Served Per State</p>
-                </div>
-                <div id="map-graph" class="chart d-block mx-auto"></div>
             </div>
         </div>
 
+        <div class="container-fluid">
+          <div class="col-12">
+              <p class="lead text-center">Packages, Spend, and Hospitals Served Per State</p>
+          </div>
+          <div id="tester" class="chart d-block mx-auto"></div>
+        </div>
+
+        <div class="container-fluid padding">
+            
+        </div>
 
 
       <div class="padding"></div>
@@ -643,10 +649,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
         
         <script>
-            MAP_GRAPH = document.getElementById('map-graph');
-            var fig = {{plot | safe}}
-            var config = {responsive: true}
-            Plotly.newPlot(MAP_GRAPH, fig.data, fig.layout, config);
+            TESTER = document.getElementById('tester');
+            var fig = {{plot | safe}};
+            var config = {responsive: true};
+            Plotly.newPlot(TESTER, fig.data, fig.layout, config);
         </script>
         
         {% endblock %}
