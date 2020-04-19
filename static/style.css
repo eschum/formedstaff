@@ -44,7 +44,7 @@ body {
 a {
     color: #00B964;
 }
-}
+
 
 .navbar-nav li {
     padding-right: 1.3rem;
@@ -229,6 +229,9 @@ thead {
 
 .chart {
     margin-top: 0rem;
+.mycard {
+    margin: 1em;
+    max-width: 28rem;
 }
 
 /*media query*/
