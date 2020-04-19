@@ -9,6 +9,10 @@ html, body {
     color: #00B964;
 }
 
+.modebar{
+      display: none !important;
+}
+
 .content {
     max-width: 1024px;
     margin: 0 auto !important;

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- header menu - nav -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+            <div class="container-fluid content">
+                    <span class="navbar-brand mb-0 h1">#SnacksForMedStaff</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/progress">Progress</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="/suggest">Suggest Hospital</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="/partners">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid padding">
+                    <div id="tester" class="chart d-block mx-auto"></div>
+
+                </div>
+                
+
+                
+
+
+
+            </div>
+            <footer class="container-fluid"><div class="footer-copyright text-center py-3 fixed-bottom">© 2020 Coco Ma and Kathy Harcourt</div></footer>
+            
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+            <script>
+            
+                TESTER = document.getElementById('tester');
+
+                
+                var data = [{
+    type: 'scattergeo',
+    mode: 'markers',
+    locations: ['FRA', 'DEU', 'RUS', 'ESP'],
+    marker: {
+        size: [20, 30, 15, 10],
+        color: [10, 20, 40, 50],
+        cmin: 0,
+        cmax: 50,
+        colorscale: 'Greens',
+        colorbar: {
+            title: 'Some rate',
+            ticksuffix: '%',
+            showticksuffix: 'last'
+        },
+        line: {
+            color: 'black'
+        }
+    },
+    name: 'europe data'
+}];
+
+var layout = {
+    'geo': {
+        'scope': 'europe',
+        'resolution': 50
+    }
+};
+
+var fig = {{plot | safe}}
+
+var config = {responsive: true}
+
+Plotly.newPlot(TESTER, fig.data, fig.layout, config); 
+        
+            </script>
+
+            {% endblock %}

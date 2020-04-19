@@ -2,6 +2,26 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import config
 
+#####Code additions to test the rendering of Plotly map.#####
+import pandas as pd
+import plotly
+import plotly.graph_objects as go
+import json
+import numpy as np
+df = pd.read_csv('../static/mapdata.csv')
+
+for col in df.columns:
+    df[col] = df[col].astype(str)
+
+df['text'] = df['packages'] + ' Packages' + '<br>' + \
+    df['state'] + '<br>' + df['total fruits'] + ' Hospitals' + '<br>' + \
+    df['spend'] + 'Spent' + '<br>' + 'Hospitals Served: ' + '<br>' + df['hospitals']
+
+#have a state variable to test whether or not the plot is loaded
+#graph_loaded = False
+######## end of code addition######
+
+
 app = Flask(__name__)
 app.config.from_object('config.Config')
 
@@ -46,8 +66,6 @@ def partners():
 def about():
     return render_template('about.html')
 
-
-
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
@@ -66,6 +84,58 @@ def submit():
         db.session.commit()
 
         return render_template('contact_success.html')
+
+@app.route('/test')
+def map_test():
+    # if not graph_loaded:
+    
+    fig = go.Figure(data=go.Choropleth(
+        locations=df['code'],
+        z=df['total exports'].astype(float),
+        locationmode='USA-states',
+        colorscale='Greens',
+        autocolorscale=False,
+        text=df['text'], # hover text
+        marker_line_color='grey', # line markers between states
+        colorbar_title="Packages Served (Per State)"
+    ))
+
+    fig.update_layout(
+        title_text='2011 US Agriculture Exports by State<br>(Hover for breakdown)',
+        geo = dict(
+            scope='usa',
+            projection=go.layout.geo.Projection(type = 'albers usa'),
+            showlakes=True, # lakes
+            lakecolor='rgb(255, 255, 255)'),
+    )
+
+    # data = dict(
+    #     type='choropleth',
+    #     locations=df['code'], # Spatial coordinates,
+    #     z = df['total exports'].astype(float), # Data to be color-coded,
+    #     locationmode = 'USA-states', # set of locations match entries in `locations`,
+    #     colorscale = 'Reds',
+    #     colorbar_title = "Millions USD"
+    # )
+        
+    # new_layout = go.Layout(
+	#     title_text = '2011 US Agriculture Exports by State',
+    #     geo_scope='usa', # limite map scope to USA
+    # )
+        
+
+    # count = 500
+    # xScale = np.linspace(0, 100, count)
+    # yScale = np.random.randn(count)
+ 
+    # # Create a trace
+    # fig = go.Scatter(
+    #     x = xScale,
+    #     y = yScale
+    # )
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    return render_template('test-graph.html', plot=graphJSON)
+
 
 if __name__ == '__main__':
     app.run()
