@@ -17,7 +17,6 @@ for col in df.columns:
 df = df.dropna(axis=0)
 df = df.dropna(axis=1)
 df.reset_index(drop=True)
-print(df)
 
 
 df['text'] = df['packages'] + ' Packages' + '<br>' + \
@@ -105,13 +104,24 @@ def map_test():
         autocolorscale=False,
         text=df['text'], # hover text
         marker_line_color='grey', # line markers between states
-        colorbar_title="Packages Served (Per State)", 
-        showscale = False
+        colorbar_title="Packages", 
+        colorbar=dict(len=0.5, thickness=10),
     ))
 
     fig.update_layout(
-        #title_text='2011 US Agriculture Exports by State<br>(Hover for breakdown)',
-        margin = {'t': 0},
+        # title_text='Packages, SPend, and Hospitals Served Per State',
+        dragmode = False,
+        margin = dict(
+            l=0,
+            r=0,
+            t=0,
+            b=0,
+            pad=0
+        ),
+        font=dict(
+            family="'Poppins', sans-serif",
+            color="#00B964"
+        ),
         geo = dict(
             scope='usa',
             projection=go.layout.geo.Projection(type = 'albers usa'),

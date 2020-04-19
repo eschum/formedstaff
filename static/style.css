@@ -229,6 +229,7 @@ thead {
 
 .chart {
     margin-top: 0rem;
+    z-index: -1;
 }
 
 .mycard {
@@ -350,8 +351,6 @@ thead {
     .partner-img {
         width: 85%;
     }
-
-
     
 }
 
