@@ -98,9 +98,11 @@ def map_test():
     fig = go.Figure(data=go.Choropleth(
         locations=df['code'],
         z=df['packages'].astype(float),
+        zmin=11,
         hoverinfo = "location+text",
         locationmode='USA-states',
-        colorscale='Greens',
+        colorscale=[[0, 'rgb(132,203,131)'], [1, 'rgb(0, 68, 27)']],
+        #colorscale='Greens',
         autocolorscale=False,
         text=df['text'], # hover text
         marker_line_color='grey', # line markers between states
