@@ -40,7 +40,7 @@ body {
 a {
     color: #00B964;
 }
-}
+
 
 .navbar-nav li {
     padding-right: 1.3rem;
@@ -221,6 +221,11 @@ thead {
 
 .bottom {
     padding-top: 1rem;
+}
+
+.mycard {
+    margin: 1em;
+    max-width: 32rem;
 }
 
 /*media query*/
