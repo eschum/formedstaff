@@ -105,11 +105,13 @@ def map_test():
         autocolorscale=False,
         text=df['text'], # hover text
         marker_line_color='grey', # line markers between states
-        colorbar_title="Packages Served (Per State)"
+        colorbar_title="Packages Served (Per State)", 
+        showscale = False
     ))
 
     fig.update_layout(
         #title_text='2011 US Agriculture Exports by State<br>(Hover for breakdown)',
+        margin = {'t': 0},
         geo = dict(
             scope='usa',
             projection=go.layout.geo.Projection(type = 'albers usa'),
