@@ -7,14 +7,13 @@ import pandas as pd
 import plotly
 import plotly.graph_objects as go
 import json
-import numpy as np
 df = pd.read_csv('../static/mapdata.csv')
 
 for col in df.columns:
     df[col] = df[col].astype(str)
 
 df['text'] = df['packages'] + ' Packages' + '<br>' + \
-    df['state'] + '<br>' + df['total fruits'] + ' Hospitals' + '<br>' + \
+    df['state'] + '<br>' + df['hosp_count'] + ' Hospitals' + '<br>' + \
     df['spend'] + 'Spent' + '<br>' + 'Hospitals Served: ' + '<br>' + df['hospitals']
 
 #have a state variable to test whether or not the plot is loaded
@@ -91,7 +90,7 @@ def map_test():
     
     fig = go.Figure(data=go.Choropleth(
         locations=df['code'],
-        z=df['total exports'].astype(float),
+        z=df['packages'].astype(int),
         locationmode='USA-states',
         colorscale='Greens',
         autocolorscale=False,
@@ -101,38 +100,14 @@ def map_test():
     ))
 
     fig.update_layout(
-        title_text='2011 US Agriculture Exports by State<br>(Hover for breakdown)',
+        #title_text='2011 US Agriculture Exports by State<br>(Hover for breakdown)',
         geo = dict(
             scope='usa',
             projection=go.layout.geo.Projection(type = 'albers usa'),
             showlakes=True, # lakes
             lakecolor='rgb(255, 255, 255)'),
     )
-
-    # data = dict(
-    #     type='choropleth',
-    #     locations=df['code'], # Spatial coordinates,
-    #     z = df['total exports'].astype(float), # Data to be color-coded,
-    #     locationmode = 'USA-states', # set of locations match entries in `locations`,
-    #     colorscale = 'Reds',
-    #     colorbar_title = "Millions USD"
-    # )
-        
-    # new_layout = go.Layout(
-	#     title_text = '2011 US Agriculture Exports by State',
-    #     geo_scope='usa', # limite map scope to USA
-    # )
-        
-
-    # count = 500
-    # xScale = np.linspace(0, 100, count)
-    # yScale = np.random.randn(count)
- 
-    # # Create a trace
-    # fig = go.Scatter(
-    #     x = xScale,
-    #     y = yScale
-    # )
+    
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     return render_template('test-graph.html', plot=graphJSON)
 
