@@ -28,7 +28,9 @@ class HospitalDB(db.Model):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    #for testing, go right to the press page
+    return render_template('press.html')
+    # return render_template('index.html')
 
 @app.route('/progress')
 def progress():
@@ -41,6 +43,10 @@ def suggest():
 @app.route('/partners')
 def partners():
     return render_template('partners.html')
+
+@app.route('/press')
+def press():
+    return render_template('press.html')
 
 @app.route('/about')
 def about():
