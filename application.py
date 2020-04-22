@@ -2,31 +2,39 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import config
 
-#####Code additions to test the rendering of Plotly map.#####
 import pandas as pd
 import plotly
 import plotly.graph_objects as go
 import json
-df = pd.read_csv('static/mapdata.csv')
 
+
+
+##Read and process data for populating choropleth map.
+df = pd.read_csv('static/mapdata.csv')
 for col in df.columns:
     if col == 'packages' or col =='hosp_count':
         df[col] = df[col].astype(int)
     df[col] = df[col].astype(str)
 
-df = df.dropna(axis=0)
-df = df.dropna(axis=1)
-df.reset_index(drop=True)
-
-
 df['text'] = df['packages'] + ' Packages' + '<br>' + \
     df['state'] + '<br>' + df['spend'] + ' Spent' + '<br><br>' + \
     'Hospitals Served (' + df['hosp_count'] + '):' + '<br>' + df['hospitals']
 
-#have a state variable to test whether or not the plot is loaded
-#graph_loaded = False
-######## end of code addition######
+##Read and process data for populating progress table and dashboard entries.
+td_df = pd.read_csv('static/tabledata.csv')
+for col in td_df.columns:
+    if col == 'Order Dollar Value':
+        td_df[col] = td_df[col].astype(float)
 
+table_data = td_df.to_html(index=False, classes='table table-hover', justify='center', border=0)
+#table_data = zip(td_df['date'], td_df['hospital'], td_df['restaurant'], td_df['value'])
+hosp_count = 22 ##Manual entry
+package_count = td_df.shape[0]
+value_count = str(round(td_df['Order Dollar Value'].sum(axis=0), 2))
+average_daily = 270.98  ##Manual entry -- for now
+days_remaining = 23
+
+print(table_data)
 
 app = Flask(__name__)
 app.config.from_object('config.Config')
@@ -60,47 +68,6 @@ def index():
 
 @app.route('/progress')
 def progress():
-    return render_template('progress.html')
-
-@app.route('/suggest')
-def suggest():
-    return render_template('contact.html')
-
-@app.route('/partners')
-def partners():
-    return render_template('partners.html')
-
-@app.route('/press')
-def press():
-    return render_template('press.html')
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-@app.route('/submit', methods=['POST'])
-def submit():
-    if request.method == 'POST':
-        #get data from form.
-        hospital_name = request.form['hospital_name']
-        contact_name = request.form['contact_name']
-        contact_email = request.form['contact_email']
-        contact_phone = request.form['contact_phone']
-        comment_field = request.form['comment_field']
-        #print(hospital_name,  contact_name, contact_email, contact_phone, comment_field)
-        if hospital_name == '':
-            return render_template('contact.html', message='Please Enter a Hospital Name!')
-        
-        data = HospitalDB(hospital_name, contact_name, contact_email, contact_phone, comment_field)
-        db.session.add(data)
-        db.session.commit()
-
-        return render_template('contact_success.html')
-
-@app.route('/test')
-def map_test():
-    # if not graph_loaded:
-    
     fig = go.Figure(data=go.Choropleth(
         locations=df['code'],
         z=df['packages'].astype(float),
@@ -138,7 +105,44 @@ def map_test():
     )
 
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return render_template('progress-test.html', plot=graphJSON)
+    return render_template('progress.html', plot=graphJSON, table_data=table_data, test_var = table_data, 
+    hosp_count = hosp_count, package_count = package_count, value_count = value_count, 
+    average_daily = average_daily, days_remaining = days_remaining)
+
+@app.route('/suggest')
+def suggest():
+    return render_template('contact.html')
+
+@app.route('/partners')
+def partners():
+    return render_template('partners.html')
+
+@app.route('/press')
+def press():
+    return render_template('press.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/submit', methods=['POST'])
+def submit():
+    if request.method == 'POST':
+        #get data from form.
+        hospital_name = request.form['hospital_name']
+        contact_name = request.form['contact_name']
+        contact_email = request.form['contact_email']
+        contact_phone = request.form['contact_phone']
+        comment_field = request.form['comment_field']
+        #print(hospital_name,  contact_name, contact_email, contact_phone, comment_field)
+        if hospital_name == '':
+            return render_template('contact.html', message='Please Enter a Hospital Name!')
+        
+        data = HospitalDB(hospital_name, contact_name, contact_email, contact_phone, comment_field)
+        db.session.add(data)
+        db.session.commit()
+
+        return render_template('contact_success.html')
 
 
 if __name__ == '__main__':
