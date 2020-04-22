@@ -227,6 +227,18 @@ thead {
     padding: 2rem;
 }
 
+.about-div {
+    padding: 1rem;
+}
+
+.vis-left {
+    padding-right: 1rem;
+}
+
+.vis-right {
+    padding-left: 1rem;
+}
+
 /*media query*/
 @media (max-width: 992px) {
     .social a {
@@ -341,9 +353,14 @@ thead {
     .partner-img {
         width: 85%;
     }
-
-
     
+    .vis-left {
+        padding-right: 0;
+    }
+    
+    .vis-right {
+        padding-left: 0;
+    }
 }
 
 /*fix for firefox*/
