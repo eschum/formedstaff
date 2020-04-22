@@ -2,6 +2,32 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 import config
 
+#####Code additions to test the rendering of Plotly map.#####
+import pandas as pd
+import plotly
+import plotly.graph_objects as go
+import json
+df = pd.read_csv('static/mapdata.csv')
+
+for col in df.columns:
+    if col == 'packages' or col =='hosp_count':
+        df[col] = df[col].astype(int)
+    df[col] = df[col].astype(str)
+
+df = df.dropna(axis=0)
+df = df.dropna(axis=1)
+df.reset_index(drop=True)
+
+
+df['text'] = df['packages'] + ' Packages' + '<br>' + \
+    df['state'] + '<br>' + df['spend'] + ' Spent' + '<br><br>' + \
+    'Hospitals Served (' + df['hosp_count'] + '):' + '<br>' + df['hospitals']
+
+#have a state variable to test whether or not the plot is loaded
+#graph_loaded = False
+######## end of code addition######
+
+
 app = Flask(__name__)
 app.config.from_object('config.Config')
 
@@ -52,8 +78,6 @@ def press():
 def about():
     return render_template('about.html')
 
-
-
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
@@ -72,6 +96,50 @@ def submit():
         db.session.commit()
 
         return render_template('contact_success.html')
+
+@app.route('/test')
+def map_test():
+    # if not graph_loaded:
+    
+    fig = go.Figure(data=go.Choropleth(
+        locations=df['code'],
+        z=df['packages'].astype(float),
+        zmin=11,
+        hoverinfo = "location+text",
+        locationmode='USA-states',
+        colorscale=[[0, 'rgb(132,203,131)'], [1, 'rgb(0, 68, 27)']],
+        #colorscale='Greens',
+        autocolorscale=False,
+        text=df['text'], # hover text
+        marker_line_color='grey', # line markers between states
+        colorbar_title="Packages", 
+        colorbar=dict(len=0.5, thickness=10),
+    ))
+
+    fig.update_layout(
+        # title_text='Packages, SPend, and Hospitals Served Per State',
+        dragmode = False,
+        margin = dict(
+            l=0,
+            r=0,
+            t=0,
+            b=0,
+            pad=0
+        ),
+        font=dict(
+            family="'Poppins', sans-serif",
+            color="#00B964"
+        ),
+        geo = dict(
+            scope='usa',
+            projection=go.layout.geo.Projection(type = 'albers usa'),
+            showlakes=True, # lakes
+            lakecolor='rgb(255, 255, 255)'),
+    )
+
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    return render_template('progress-test.html', plot=graphJSON)
+
 
 if __name__ == '__main__':
     app.run()

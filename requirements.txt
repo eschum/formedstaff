@@ -8,3 +8,5 @@ MarkupSafe
 psycopg2-binary
 SQLAlchemy
 Werkzeug
+pandas
+plotly

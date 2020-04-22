@@ -9,6 +9,10 @@ html, body {
     color: #00B964;
 }
 
+.modebar{
+      display: none !important;
+}
+
 .content {
     max-width: 1024px;
     margin: 0 auto !important;
@@ -40,7 +44,7 @@ body {
 a {
     color: #00B964;
 }
-}
+
 
 .navbar-nav li {
     padding-right: 1.3rem;
@@ -227,6 +231,16 @@ thead {
     padding: 2rem;
 }
 
+.chart {
+    margin-top: 0rem;
+    z-index: -1;
+}
+
+.mycard {
+    margin: 1em;
+    max-width: 28rem;
+}
+
 /*media query*/
 @media (max-width: 992px) {
     .social a {
@@ -341,8 +355,6 @@ thead {
     .partner-img {
         width: 85%;
     }
-
-
     
 }
 
