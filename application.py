@@ -29,7 +29,7 @@ class HospitalDB(db.Model):
 @app.route('/')
 def index():
     #for testing, go right to the press page
-    return render_template('press.html')
+    return render_template('index.html')
     # return render_template('index.html')
 
 @app.route('/progress')
