@@ -223,6 +223,10 @@ thead {
     padding-top: 1rem;
 }
 
+.press-img {
+    padding: 1rem;
+}
+
 /*media query*/
 @media (max-width: 992px) {
     .social a {
