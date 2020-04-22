@@ -26,15 +26,23 @@ for col in td_df.columns:
     if col == 'Order Dollar Value':
         td_df[col] = td_df[col].astype(float)
 
+#Calculate remainder of summary statistics
+#First sum the value, then convert to currency and reformat for displaying in html.
+value_count = str(round(td_df['Order Dollar Value'].sum(axis=0), 2))
+td_df['Order Dollar Value'] = td_df['Order Dollar Value'].map('${:,.2f}'.format)
+
 table_data = td_df.to_html(index=False, classes='table table-hover', justify='center', border=0)
 #table_data = zip(td_df['date'], td_df['hospital'], td_df['restaurant'], td_df['value'])
-hosp_count = 22 ##Manual entry
-package_count = td_df.shape[0]
-value_count = str(round(td_df['Order Dollar Value'].sum(axis=0), 2))
-average_daily = 270.98  ##Manual entry -- for now
-days_remaining = 23
 
-print(table_data)
+##Calcuate remaining parameters.
+hosp_count = 22 ##Manual entry
+curr_donation = 14798  ##Manually enter the donation amount.
+package_count = td_df.shape[0]
+average_daily = 270.98  ##Manual entry -- for now
+days_remaining = int((curr_donation - float(value_count)) / average_daily)     
+
+
+
 
 app = Flask(__name__)
 app.config.from_object('config.Config')

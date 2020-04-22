@@ -95,7 +95,7 @@ hr {
 
 .jumbotron {
     padding: 1rem;
-    border-radius: 0;
+    /*border-radius: 0;*/
     background-color: #00B964;
     color: #FFFFFF;
     font-weight: 50;
@@ -137,7 +137,7 @@ hr {
 
 .social a {
     font-size: 4.5em;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .fa-facebook {
@@ -242,15 +242,12 @@ thead {
 }
 
 .about-div {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
-.vis-left {
-    padding-right: 1rem;
-}
-
-.vis-right {
-    padding-left: 1rem;
+.pad-vis {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 /*media query*/
@@ -297,6 +294,7 @@ thead {
     .partner {
         width: 95%;
     }
+
 }
 @media (max-width: 576px) {
     .carousel-caption {
@@ -368,13 +366,10 @@ thead {
         width: 85%;
     }
     
-    .vis-left {
-        padding-right: 0;
+    .vis-r {
+        margin-top: 0.5rem;
     }
-    
-    .vis-right {
-        padding-left: 0;
-    }
+
 }
 
 /*fix for firefox*/
