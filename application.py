@@ -7,38 +7,43 @@ import plotly
 import plotly.graph_objects as go
 import json
 
+import datetime
+
 
 
 ##Read and process data for populating choropleth map.
 df = pd.read_csv('static/mapdata.csv')
 for col in df.columns:
-    if col == 'packages' or col =='hosp_count':
+    if col == 'meals' or col =='hosp_count':
         df[col] = df[col].astype(int)
-    df[col] = df[col].astype(str)
+    else:
+        df[col] = df[col].astype(str)
 
-df['text'] = df['packages'] + ' Packages' + '<br>' + \
+df['text'] = df['meals'].astype(str) + ' Meals' + '<br>' + \
     df['state'] + '<br>' + df['spend'] + ' Spent' + '<br><br>' + \
-    'Hospitals Served (' + df['hosp_count'] + '):' + '<br>' + df['hospitals']
+    'Hospitals Served (' + df['hosp_count'].astype(str) + '):' + '<br>' + df['hospitals']
 
 ##Read and process data for populating progress table and dashboard entries.
 td_df = pd.read_csv('static/tabledata.csv')
 for col in td_df.columns:
-    if col == 'Order Dollar Value':
+    if col == 'Dollar Value':
         td_df[col] = td_df[col].astype(float)
 
 #Calculate remainder of summary statistics
 #First sum the value, then convert to currency and reformat for displaying in html.
-value_count = str(round(td_df['Order Dollar Value'].sum(axis=0), 2))
-td_df['Order Dollar Value'] = td_df['Order Dollar Value'].map('${:,.2f}'.format)
+value_count_float = round(sum(td_df[td_df.columns[3]]), 2)
+value_count = str(value_count_float)
+td_df[td_df.columns[3]] = td_df[td_df.columns[3]].map('${:,.2f}'.format)
 
 table_data = td_df.to_html(index=False, classes='table table-hover', justify='center', border=0)
 #table_data = zip(td_df['date'], td_df['hospital'], td_df['restaurant'], td_df['value'])
 
 ##Calcuate remaining parameters.
-hosp_count = 22 ##Manual entry
-curr_donation = 14798  ##Manually enter the donation amount.
-package_count = td_df.shape[0]
-average_daily = 270.98  ##Manual entry -- for now
+hosp_count = df['hosp_count'].sum(axis=0)
+curr_donation = 15715  ##Manually enter the donation amount.
+curr_date = datetime.date(2020, 4, 30)  ##Manually enter the current date of update
+meal_count = df['meals'].sum(axis=0)
+average_daily = round(value_count_float  / (curr_date - datetime.date(2020, 3, 20)).days, 2)
 days_remaining = int((curr_donation - float(value_count)) / average_daily)     
 
 
@@ -78,7 +83,7 @@ def index():
 def progress():
     fig = go.Figure(data=go.Choropleth(
         locations=df['code'],
-        z=df['packages'].astype(float),
+        z=df['meals'].astype(float),
         zmin=11,
         hoverinfo = "location+text",
         locationmode='USA-states',
@@ -87,12 +92,12 @@ def progress():
         autocolorscale=False,
         text=df['text'], # hover text
         marker_line_color='grey', # line markers between states
-        colorbar_title="Packages", 
+        colorbar_title="Meals Served", 
         colorbar=dict(len=0.5, thickness=10),
     ))
 
     fig.update_layout(
-        # title_text='Packages, SPend, and Hospitals Served Per State',
+        # title_text='Meals, Spend, and Hospitals Served Per State',
         dragmode = False,
         margin = dict(
             l=0,
@@ -114,7 +119,7 @@ def progress():
 
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     return render_template('progress.html', plot=graphJSON, table_data=table_data, test_var = table_data, 
-    hosp_count = hosp_count, package_count = package_count, value_count = value_count, 
+    hosp_count = hosp_count, meal_count = meal_count, value_count = value_count, 
     average_daily = average_daily, days_remaining = days_remaining)
 
 @app.route('/suggest')
