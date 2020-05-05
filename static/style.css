@@ -297,6 +297,18 @@ thead {
 
 }
 @media (max-width: 576px) {
+    .welcome {
+        width: 100%;
+    }
+    
+    .content {
+        width: 95%;
+    }
+
+    .partner {
+        width: 95%;
+    }
+
     .carousel-caption {
         top: 40%;
     }
