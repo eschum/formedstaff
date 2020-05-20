@@ -1,4 +1,5 @@
 #Snacks For Med Staff
+
 Full stack web app to market and showcase fundraising efforts in support of front line medical workers during COVID-19.
 
 This is a website to accompany the #snacksformedstaff 501(c)(3) nonprofit efforts to order food and PPE for medical staff in hospitals across the U.S. and small local restaurants in 2020 during COVID-19. 
