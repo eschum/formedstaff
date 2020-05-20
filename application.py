@@ -40,8 +40,8 @@ table_data = td_df.to_html(index=False, classes='table table-hover', justify='ce
 
 ##Calcuate remaining parameters.
 hosp_count = df['hosp_count'].sum(axis=0)
-curr_donation = 15715  ##Manually enter the donation amount.
-curr_date = datetime.date(2020, 4, 30)  ##Manually enter the current date of update
+curr_donation = 17910 + 2000 ##Manually enter the donation amount.
+curr_date = datetime.date(2020, 5, 20)  ##Manually enter the current date of update
 meal_count = df['meals'].sum(axis=0)
 average_daily = round(value_count_float  / (curr_date - datetime.date(2020, 3, 20)).days, 2)
 days_remaining = int((curr_donation - float(value_count)) / average_daily)     

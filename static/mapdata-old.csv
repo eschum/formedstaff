@@ -1,0 +1,11 @@
+﻿code,meals,state,hosp_count,spend,hospitals
+TX,1409,Texas,13,"$6,566.44 ","Aspire Hospital<br>Ben Taub Hospital<br>Baylor University Medical Center<br>CHI St Lukes the Woodlands<br>Davam Urgent Care<br>HCA Houston Conroe<br>Houston Methodist<br>Lyndon B Johnson Hospital<br>Memorial Hermann the Woodlands<br>Methodist Specialty and Transplant Hospital<br>Texas Health Arlington Memorial Hospital<br>University Hospital San Antonio<br>CHI St. Luke's Health-Baylor St. Luke's Medical Center
+"
+CA,100,California,2,$591.05 ,"Anaheim Regional Hosptial<br>UCLA Medical Center
+"
+PA,160,Pennsylvania,2,$601.61 ,"Temple University Hospital<br>Einstein Medical Center
+"
+MI,168,Michigan,4,"$1,806.84 ","DMC Sinai Grace Hospital<br>Detroit Receiving Hospital <br>Henry Ford West Bloomfield Hospital<br>Henry Ford Allegiance
+"
+NY,215,New York,2,"$1,292.56 ","Long Island Jewish Medical Center<br>Elmhurst Hospital
+"
