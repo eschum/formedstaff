@@ -54,11 +54,11 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <form action="/submit" method="POST">
+                    <form action="/submit" method="POST" >
                         <div class="form-group">
                             <label for="hospName">Hospital Name</label>
                             <input type="text" class="form-control" id="hospname" placeholder="Enter Name" 
-                            name="hospital_name">
+                            name="hospital_name" disabled>
                             {% if message %}
                             <small id="message" class="form-text al">{{ message | safe }}</small>    
                             {% endif %}
