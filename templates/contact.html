@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block head_addition %}
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#endModal').modal('show');
+    });
+</script>
+{% endblock %}
+
+
 {% block content %}
         <!-- header menu - nav -->
         <nav class="navbar navbar-expand-md navbar-dark sticky-top">
@@ -46,10 +55,37 @@
                         <p>Contact information is confidential and will never be sold, traded, or used for any other purpose. 
                             </p>
                     </div>
-                </div>
             </div>
+        </div>
         
-        <!-- Team Members section -->
+        <!-- Modal -->
+        <!-- Modal -->
+<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for your interest and support!</p>
+              <p>As we've suspended operations as of May 30th, 2020; we are no longer recording suggestions.</p>
+              <p>Please continue to wear a mask and follow all guidelines from qualified health officials to keep safe and reduce the burden
+                  on our healthcare system!</p>      
+              
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Information Prompt Form -->
         <div class="container-fluid padding">
             <div class="row">
                 <div class="col-md-3"></div>
@@ -65,26 +101,26 @@
                         </div>
                         <div class="form-group">
                             <label for="contactName">Contact Name</label>
-                            <input type="text" class="form-control" id="contactName" placeholder="Name" name="contact_name">
+                            <input type="text" class="form-control" id="contactName" placeholder="Name" name="contact_name" disabled>
                         </div>
 
                         <div class="form-group">
                             <label for="contactEmail">Contact Email Address</label>
                             <input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" 
-                            placeholder="Enter Email" name="contact_email">
+                            placeholder="Enter Email" name="contact_email" disabled>
                             <small id="emailHelp" class="form-text text-muted">We don't share or sell contact information.</small>
                         </div>
 
                         <div class="form-group">
                             <label for="contactPhone">Contact Phone Number</label>
                             <input type="text" class="form-control" id="contactPhone" placeholder="Enter Phone Number" 
-                            name="contact_phone">
+                            name="contact_phone" disabled>
                             <small id="emailHelp" class="form-text text-muted">We don't share or sell contact information.</small>
                         </div>
 
                         <div class="form-group">
                             <label for="commentField">Comments / Additional Information</label>
-                            <textarea class="form-control" id="commentField" rows="3" name="comment_field"></textarea>
+                            <textarea class="form-control" id="commentField" rows="3" name="comment_field" disabled></textarea>
                         </div>
 
 
@@ -95,7 +131,7 @@
                         </div>-->
 
                         <div class="padding"></div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endModal">Submit</button>
                     </form>
                 </div>
                 <div class="col-md-3"></div>
@@ -108,5 +144,4 @@
         </div>
         
         <footer class="container-fluid"><div class="footer-copyright text-center py-3 fixed-bottom">© 2020 Coco Ma and Kathy Harcourt</div></footer>
-        
 {% endblock %}

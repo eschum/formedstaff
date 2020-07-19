@@ -1,14 +1,14 @@
 code,meals,state,hosp_count,spend,hospitals
-TX,1946,Texas,13,"$10,362.77 ","Aspire Hospital<br>Ben Taub Hospital<br>Baylor University Medical Center<br>CHI St Lukes the Woodlands<br>Davam Urgent Care<br>HCA Houston Conroe<br>Houston Methodist<br>Lyndon B Johnson Hospital<br>Memorial Hermann the Woodlands<br>Methodist Specialty and Transplant Hospital<br>Texas Health Arlington Memorial Hospital<br>University Hospital San Antonio<br>CHI St. Luke's Health-Baylor St. Luke's Medical Center
+TX,2068,Texas,13,"$11,417.25 ","Aspire Hospital<br>Ben Taub Hospital<br>Baylor University Medical Center<br>CHI St Lukes the Woodlands<br>Davam Urgent Care<br>HCA Houston Conroe<br>Houston Methodist<br>Lyndon B Johnson Hospital<br>Memorial Hermann the Woodlands<br>Methodist Specialty and Transplant Hospital<br>Texas Health Arlington Memorial Hospital<br>University Hospital San Antonio<br>CHI St. Luke's Health-Baylor St. Luke's Medical Center
 
 
 "
-CA,162,California,2,"$1,074.90 ","Anaheim Regional Hospital<br>UCLA Medical Center
+CA,212,California,2,"$1,285.25 ","Anaheim Regional Hospital<br>UCLA Medical Center
 "
-PA,320,Pennsylvania,2,"$1,301.61 ","Temple University Hospital<br>Einstein Medical Center
+PA,400,Pennsylvania,2,"$1,671.61 ","Temple University Hospital<br>Einstein Medical Center
 "
-MI,360,Michigan,4,"$3,627.32 ","DMC Sinai Grace Hospital<br>Detroit Receiving Hospital <br>Henry Ford West Bloomfield Hospital<br>Henry Ford Allegiance
+MI,399,Michigan,4,"$3,934.22 ","DMC Sinai Grace Hospital<br>Detroit Receiving Hospital <br>Henry Ford West Bloomfield Hospital<br>Henry Ford Allegiance
 
 "
-NY,220,New York,2,"$1,292.56 ","Long Island Jewish Medical Center<br>Elmhurst Hospital
+NY,200,New York,2,"$1,292.56 ","Long Island Jewish Medical Center<br>Elmhurst Hospital
 "

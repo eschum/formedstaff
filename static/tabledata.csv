@@ -1,147 +1,163 @@
 ﻿Date,Hospital,Restaurant or PPE,Dollar Value
-5/16/2020,Houston Methodist ICU,Coffee Q,243.56
-5/16/2020,Delivery,Elite Events,15
-5/16/2020,Anaheim Regional Hospital ER,El Pollo Fino,87.15
-5/15/2020,Olive View-UCLA Medical Center,Winzza,98.55
-5/15/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
-5/15/2020,University of Michigan C.S. Mott Children's Hospital,Nosh Pit Detroit,385
-5/15/2020,Temple University Hospital ICU,Sorrento's Pizza,180
-5/15/2020,Henry Ford West Bloomfield Hospital ICU,Twins Brunch,88.92
-5/14/2020,Houston Methodist Molecular Lab,Burger-Chan,68.82
-5/14/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,229.41
-5/14/2020,Lyndon B Johnson Hospital,Burger-Chan,172.06
-5/14/2020,CHI St Lukes- Baylor Respiratory Department,Chicken Kitchen,128.79
-5/14/2020,Delivery,Elite Events,60
-5/14/2020,Henry Ford West Bloomfield Hospital ICU,Los Tres Amigos,82.57
-5/14/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
-5/14/2020,Henry Ford Allegiance Anethesia,Chilango's Burrito Bar,169
-5/12/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Kin,175
-5/12/2020,Davam Urgent Care,Kin,49
-5/12/2020,Delivery,Elite Events,30
-5/11/2020,Einstein Medical Center,Sorrento's Pizza,170
-5/8/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
-5/8/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
-5/8/2020,University of Michigan C.S. Mott Children's Hospital,Nosh Pit Detroit,280
-5/8/2020,Houston Methodist ICU,Coffee Q,246.66
-5/8/2020,Houston Methodist Molecular Lab,Coffee Q,98.66
-5/8/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Zori Bistro,175
-5/8/2020,Delivery,Elite Events,40
-5/7/2020,Ben Taub Hospital Anesthesia Department,Chicken Kitchen,286
-5/7/2020,Lyndon B Johnson Hospital,Chicken Kitchen,214.5
-5/7/2020,Olive View-UCLA Medical Center,Los Ruizenores,106.55
-5/6/2020,Einstein Medical Center,Sorrento's Pizza,170
-5/6/2020,Temple University Hospital ICU,Sorrento's Pizza,180
-5/5/2020,Henry Ford Allegiance ICU T4,Chilango's Burrito Bar,151
-5/5/2020,Henry Ford Allegiance ICU T6,Chilango's Burrito Bar,151
-5/4/2020,CHI St Lukes- Baylor Respiratory Department,Coffee Q,146.14
-5/4/2020,Delivery,Elite Events,15
-5/1/2020,Houston Methodist ICU,Burger-Chan,174
-5/1/2020,Houston Methodist Molecular Lab,Burger-Chan,72.8
-5/1/2020,Delivery,Elite Events,20
-5/1/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Moon's Donuts,69.68
-5/1/2020,University of Michigan C.S. Mott Children's Hospital,New York Pizza Depot,200.51
-4/30/2020,Anaheim Regional Hospital ER,Banh Mi Che Cali,127.78
-4/30/2020,Henry Ford Allegiance Anethesia,Chilango's Burrito Bar,116.3
-4/30/2020,Lyndon B Johnson Hospital,Zori Bistro,210
-4/30/2020,Ben Taub Hospital Anesthesia Department,Zori Bistro,280
-4/30/2020,CHI St Lukes- Baylor Respiratory Department,Zori Bistro,126
-4/30/2020,Delivery,Elite Events,45
-4/30/2020,Olive View-UCLA Medical Center,Daniel's Taco,185.25
-4/29/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Coffee Q,190.28
-4/29/2020,Davam Urgent Care,Coffee Q,53.29
-4/29/2020,Delivery,Elite Events,30
-4/28/2020,Temple University Hospital ICU,Sorrento's Pizza,130
-4/27/2020,Einstein Medical Center,Sorrento's Pizza,170
-4/24/2020,Ben Taub Hospital Anesthesia Department,Chicken Kitchen,286.2
-4/24/2020,CHI St Lukes- Baylor Respiratory Department,Chicken Kitchen,214.65
-4/24/2020,Lyndon B Johnson Hospital,Chicken Kitchen,128.79
-4/24/2020,Delivery,Elite Events,50
+5/26/2020,Lyndon B Johnson Hospital,Dessert Gallery,80
+5/26/2020,Aspire Hospital,Sak's Donuts,58
+5/26/2020,Aspire Hospital,Zazza Pizza Cafe,67
+5/23/2020,Houston Methodist ICU,Coco Crepes,103
+5/23/2020,Lyndon B Johnson Hospital,Chilosos Taco House,61.86
+5/23/2020,Davam Urgent Care,Sundale Donuts,53.97
+5/22/2020,Houston Methodist ICU,Egghaus Gourmet,115
+5/22/2020,Lyndon B Johnson Hospital,Pink's Pizza,81.43
+5/21/2020,Davam Urgent Care,Mama Juanita's Mexican Restaurant,64.97
+5/21/2020,Aspire Hospital,Black Walnut Cafe ( Woodland),58.29
+5/21/2020,HCA Houston Conroe ER,Sak's Donuts,68.95
+5/20/2020,Long Island Jewish Medical Center 7th floor COVID unit,Juice For Life - Bayside,172.81
+5/20/2020,Lyndon B Johnson Hospital,Hugs & Donuts,70.16
+5/20/2020,Houston Methodist ICU,Urban Eats,76.52
+5/19/2020,Long Island Jewish Medical Center 7th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,90.16
+5/18/2020,Long Island Jewish Medical Center 8th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,100.41
+5/16/2020,Davam Urgent Care,Brooklyn Café,62.72
+5/16/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",The Black Walnut Café (Woodland),136.92
+5/16/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Dos Tacos,64.12
+5/15/2020,HCA Houston Conroe ER,Sak's Donuts,71.97
+5/15/2020,Long Island Jewish Medical Center 8th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,147.72
+5/15/2020,Long Island Jewish Medical Center 7th floor COVID unit,Costa Nova Waffle,137.86
+5/15/2020,Elmhurst Hospital,Overnight 20 N95 masks,96
+5/15/2020,Houston Methodist ICU,Brasil,80.75
+5/14/2020,Long Island Jewish Medical Center 7th floor COVID unit,22 Surgical caps,165.05
+5/14/2020,Davam Urgent Care,Crave Cupcakes,71.33
+5/14/2020,Lyndon B Johnson Hospital,Toasters Breakfast and Lunch Cafe,104.21
+5/14/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Chicago Pizza and Pasta,45.58
+5/14/2020,CHI St Lukes the Woodlands,Brooklyn Cafe,101.93
+5/14/2020,Long Island Jewish Medical Center 3rd floor COVID unit,Crawford's Coffee&Cafe - Great Neck,78.47
+5/14/2020,DMC Sinai Grace Hospital Anesthesia dept,Tropical Smoothie Cafe- Royal Oak,94.36
+5/14/2020,Health Arlington Memorial Emergency Department,Moonlight Cakes,89.64
+5/12/2020,Houston Methodist Molecular Lab,Urban Eats,78.22
+5/12/2020,Anaheim Regional Hospital ER,Carolina's Italian Restaurant,107.81
+5/12/2020,Health Arlington Memorial Emergency Department,Mr.Jims Pizza,93.31
+5/11/2020,Detroit Receving Hospital 4Q Surgical ICU,The Cracked Egg of Grosse Pointe,153.1
+5/8/2020,Houston Methodist ICU,Bollo Woodfire Pizza,95.34
+5/8/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Mod's Pizza,78.03
+5/8/2020,Ben Taub Hospital Anesthesia Department,Pepperoni's - Montrose,153.43
+5/8/2020,Davam Urgent Care,The Black Walnut Café (Woodland),53.86
+5/8/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",On The Boarder,128.58
+5/8/2020,Long Island Jewish Medical Center 7th floor COVID unit,Hangry,82.5
+5/8/2020,Health Arlington Memorial Emergency Department,BurgerFi,145.32
+5/7/2020,Lyndon B Johnson Hospital,District 7 Pizzeria,115.32
+5/7/2020,Ben Taub Hospital Anesthesia Department,Luce Ave Coffee Roasters,182.54
+5/7/2020,Detroit Receving Hospital 4Q Surgical ICU,Paisano's Pizza,116.45
+5/6/2020,University Hospital San Antonio,46th st. new york style pizzeria,128.56
+5/6/2020,Methodist Specialty and Transplant Hospital - ER (San Antonio),Mama Margie's,90.46
+5/5/2020,Houston Methodist Molecular Lab,Tacos A Go Go - Heights,125.07
+5/5/2020,DMC Sinai Grace Hospital Anesthesia dept,Jet's Pizza,147.76
+5/4/2020,Long Island Jewish Medical Center 7th floor COVID unit,VI Pizza,129.09
+5/4/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,200
+5/1/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",The Brooklyn Cafe,105.84
+5/1/2020,Lyndon B Johnson Hospital,Burger-Chan,145.8
+5/1/2020,Houston Methodist ICU,Burger-Chan,91.8
+5/1/2020,Olive View-UCLA Medical Center,ZPizza,150.38
+5/1/2020,Henry Ford West Bloomfield Hospital ICU,Cottage Inn Pizza,81.26
+4/30/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Chicago Pizza Las Colinas,85.53
+4/30/2020,Davam Urgent Care,Gringo's Mexican Kitchen,73.68
+4/30/2020,Temple University Hospital ICU,Fila's Pizza,145.94
+4/30/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,85.15
+4/30/2020,Anaheim Regional Hospital ER,Tacqueria De Anda,116.92
+4/30/2020,Henry Ford West Bloomfield Hospital ICU,Leo's Coney Island,123.39
+4/30/2020,Henry Ford Allegiance Anethesia,Happy's Pizza,98.27
+4/29/2020,Methodist Specialty and Transplant Hospital - ER (San Antonio),Duck Donuts,52.29
+4/29/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",RB Grill + Elite Events Houston,141.29
+4/29/2020,CHI St Lukes the Woodlands,RB Grill + Elite Events Houston,141.29
+4/28/2020,Davam Urgent Care,RB Grill + Elite Events Houston,141.29
+4/27/2020,Lyndon B Johnson Hospital,Burger-Chan,165
+4/24/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,155
+4/24/2020,Houston Methodist ICU,Burger-Chan,128.4
+4/24/2020,Houston Methodist Molecular Lab,Burger-Chan,73.2
+4/24/2020,University Hospital San Antonio,Duck Donuts,111.1
+4/24/2020,Long Island Jewish Medical Center 7th floor COVID unit,Fairway Market Snacks,92.49
 4/24/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
-4/24/2020,Henry Ford West Bloomfield Hospital ICU,Leo's Coney Island,130.3
-4/23/2020,Houston Methodist ICU,Burger-Chan,174
-4/23/2020,Houston Methodist Molecular Lab,Burger-Chan,72.8
-4/23/2020,Delivery,Elite Events,20
-4/22/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
-4/22/2020,Henry Ford Allegiance ICU T4,Chilango's Burrito Bar,148.4
-4/22/2020,Henry Ford Allegiance ICU T6,Chilango's Burrito Bar,148.4
-4/21/2020,Davam Urgent Care,Coffee Q,96.49
-4/21/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Coffee Q,182.07
-4/21/2020,Anaheim Regional Hospital ER,Piara Pizza,89.22
-4/20/2020,Einstein Medical Center,Sorrento's Pizza,155.67
-4/19/2020,Olive View-UCLA Medical Center,Ameci Pizza & Pasta,126.72
-4/18/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
-4/17/2020,Houston Methodist ICU,Burger-Chan,128.4
-4/17/2020,Houston Methodist Molecular Lab,Burger-Chan,73.2
-4/17/2020,University Hospital San Antonio,Duck Donuts,111.1
-4/17/2020,Long Island Jewish Medical Center 7th floor COVID unit,Fairway Market Snacks,92.49
+4/23/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
+4/23/2020,Olive View-UCLA Medical Center,Ameci Pizza & Pasta,126.72
+4/23/2020,Einstein Medical Center,Sorrento's Pizza,155.67
+4/22/2020,Davam Urgent Care,Coffee Q,96.49
+4/22/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Coffee Q,182.07
+4/22/2020,Anaheim Regional Hospital ER,Piara Pizza,89.22
+4/21/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
+4/21/2020,Henry Ford Allegiance ICU T4,Chilango's Burrito Bar,148.4
+4/21/2020,Henry Ford Allegiance ICU T6,Chilango's Burrito Bar,148.4
+4/20/2020,Houston Methodist ICU,Burger-Chan,174
+4/19/2020,Houston Methodist Molecular Lab,Burger-Chan,72.8
+4/18/2020,Delivery,Elite Events,20
+4/17/2020,Ben Taub Hospital Anesthesia Department,Chicken Kitchen,286.2
+4/17/2020,CHI St Lukes- Baylor Respiratory Department,Chicken Kitchen,214.65
+4/17/2020,Lyndon B Johnson Hospital,Chicken Kitchen,128.79
+4/17/2020,Delivery,Elite Events,50
 4/17/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
-4/16/2020,Lyndon B Johnson Hospital,Burger-Chan,165
-4/16/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,155
-4/14/2020,Methodist Specialty and Transplant Hospital - ER (San Antonio),Duck Donuts,52.29
-4/14/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",RB Grill + Elite Events Houston,141.29
-4/14/2020,CHI St Lukes the Woodlands,RB Grill + Elite Events Houston,141.29
-4/14/2020,Davam Urgent Care,RB Grill + Elite Events Houston,141.29
-4/13/2020,Henry Ford West Bloomfield Hospital ICU,Leo's Coney Island,123.39
-4/13/2020,Henry Ford Allegiance Anethesia,Happy's Pizza,98.27
-4/12/2020,Anaheim Regional Hospital ER,Tacqueria De Anda,116.92
-4/11/2020,Davam Urgent Care,Gringo's Mexican Kitchen,73.68
-4/11/2020,Temple University Hospital ICU,Fila's Pizza,145.94
-4/11/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,85.15
-4/10/2020,Henry Ford West Bloomfield Hospital ICU,Cottage Inn Pizza,81.26
-4/10/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Chicago Pizza Las Colinas,85.53
-4/9/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,200
-4/9/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",The Brooklyn Cafe,105.84
-4/9/2020,Lyndon B Johnson Hospital,Burger-Chan,145.8
-4/9/2020,Houston Methodist ICU,Burger-Chan,91.8
-4/9/2020,Olive View-UCLA Medical Center,ZPizza,150.38
-4/8/2020,Long Island Jewish Medical Center 7th floor COVID unit,VI Pizza,129.09
-4/7/2020,Methodist Specialty and Transplant Hospital - ER (San Antonio),Mama Margie's,90.46
-4/7/2020,Houston Methodist Molecular Lab,Tacos A Go Go - Heights,125.07
-4/7/2020,DMC Sinai Grace Hospital Anesthesia dept,Jet's Pizza,147.76
-4/6/2020,Ben Taub Hospital Anesthesia Department,Luce Ave Coffee Roasters,182.54
-4/6/2020,Detroit Receving Hospital 4Q Surgical ICU,Paisano's Pizza,116.45
-4/6/2020,University Hospital San Antonio,46th st. new york style pizzeria,128.56
-4/5/2020,Lyndon B Johnson Hospital,District 7 Pizzeria,115.32
-4/4/2020,Health Arlington Memorial Emergency Department,BurgerFi,145.32
-4/3/2020,Davam Urgent Care,The Black Walnut Café (Woodland),53.86
-4/3/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",On The Boarder,128.58
-4/3/2020,Long Island Jewish Medical Center 7th floor COVID unit,Hangry,82.5
-4/2/2020,Houston Methodist ICU,Bollo Woodfire Pizza,95.34
-4/2/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Mod's Pizza,78.03
-4/2/2020,Ben Taub Hospital Anesthesia Department,Pepperoni's - Montrose,153.43
-4/1/2020,Houston Methodist Molecular Lab,Urban Eats,78.22
-4/1/2020,Anaheim Regional Hospital ER,Carolina's Italian Restaurant,107.81
-4/1/2020,Health Arlington Memorial Emergency Department,Mr.Jims Pizza,93.31
-4/1/2020,Detroit Receving Hospital 4Q Surgical ICU,The Cracked Egg of Grosse Pointe,153.1
-3/31/2020,Long Island Jewish Medical Center 3rd floor COVID unit,Crawford's Coffee&Cafe - Great Neck,78.47
-3/31/2020,DMC Sinai Grace Hospital Anesthesia dept,Tropical Smoothie Cafe- Royal Oak,94.36
-3/31/2020,Health Arlington Memorial Emergency Department,Moonlight Cakes,89.64
-3/30/2020,Lyndon B Johnson Hospital,Toasters Breakfast and Lunch Cafe,104.21
-3/30/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Chicago Pizza and Pasta,45.58
-3/30/2020,CHI St Lukes the Woodlands,Brooklyn Cafe,101.93
-3/29/2020,Long Island Jewish Medical Center 7th floor COVID unit,22 Surgical caps,165.05
-3/29/2020,Davam Urgent Care,Crave Cupcakes,71.33
-3/28/2020,Long Island Jewish Medical Center 7th floor COVID unit,Costa Nova Waffle,137.86
-3/28/2020,Elmhurst Hospital,Overnight 20 N95 masks,96
-3/28/2020,Houston Methodist ICU,Brasil,80.75
-3/27/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Dos Tacos,64.12
-3/27/2020,HCA Houston Conroe ER,Sak's Donuts,71.97
-3/27/2020,Long Island Jewish Medical Center 8th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,147.72
-3/26/2020,Davam Urgent Care,Brooklyn Café,62.72
-3/26/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",The Black Walnut Café (Woodland),136.92
-3/25/2020,Long Island Jewish Medical Center 7th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,90.16
-3/25/2020,Long Island Jewish Medical Center 8th floor COVID unit,Crawford's Coffee&Cafe - Great Neck,100.41
-3/24/2020,Lyndon B Johnson Hospital,Hugs & Donuts,70.16
-3/24/2020,Houston Methodist ICU,Urban Eats,76.52
-3/23/2020,HCA Houston Conroe ER,Sak's Donuts,68.95
-3/23/2020,Long Island Jewish Medical Center 7th floor COVID unit,Juice For Life - Bayside,172.81
-3/22/2020,Houston Methodist ICU,Egghaus Gourmet,115
-3/22/2020,Lyndon B Johnson Hospital,Pink's Pizza,81.43
-3/22/2020,Davam Urgent Care,Mama Juanita's Mexican Restaurant,64.97
-3/22/2020,Aspire Hospital,Black Walnut Cafe ( Woodland),58.29
-3/21/2020,Aspire Hospital,Zazza Pizza Cafe,67
-3/21/2020,Houston Methodist ICU,Coco Crepes,103
-3/21/2020,Lyndon B Johnson Hospital,Chilosos Taco House,61.86
-3/21/2020,Davam Urgent Care,Sundale Donuts,53.97
-3/20/2020,Lyndon B Johnson Hospital,Dessert Gallery,80
-3/20/2020,Aspire Hospital,Sak's Donuts,58
+4/16/2020,Henry Ford West Bloomfield Hospital ICU,Leo's Coney Island,130.3
+4/16/2020,Einstein Medical Center,Sorrento's Pizza,170
+4/14/2020,Temple University Hospital ICU,Sorrento's Pizza,130
+4/14/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Coffee Q,190.28
+4/14/2020,Davam Urgent Care,Coffee Q,53.29
+4/14/2020,Delivery,Elite Events,30
+4/13/2020,Anaheim Regional Hospital ER,Banh Mi Che Cali,127.78
+4/13/2020,Henry Ford Allegiance Anethesia,Chilango's Burrito Bar,116.3
+4/12/2020,Lyndon B Johnson Hospital,Zori Bistro,210
+4/11/2020,Ben Taub Hospital Anesthesia Department,Zori Bistro,280
+4/11/2020,CHI St Lukes- Baylor Respiratory Department,Zori Bistro,126
+4/11/2020,Delivery,Elite Events,45
+4/10/2020,Houston Methodist ICU,Burger-Chan,174
+4/10/2020,Houston Methodist Molecular Lab,Burger-Chan,72.8
+4/9/2020,Delivery,Elite Events,20
+4/9/2020,Olive View-UCLA Medical Center,Daniel's Taco,185.25
+4/9/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Moon's Donuts,69.68
+4/9/2020,University of Michigan C.S. Mott Children's Hospital,New York Pizza Depot,200.51
+4/9/2020,CHI St Lukes- Baylor Respiratory Department,Coffee Q,146.14
+4/8/2020,Delivery,Elite Events,15
+4/7/2020,Henry Ford Allegiance ICU T4,Chilango's Burrito Bar,151
+4/7/2020,Henry Ford Allegiance ICU T6,Chilango's Burrito Bar,151
+4/7/2020,Einstein Medical Center,Sorrento's Pizza,170
+4/6/2020,Temple University Hospital ICU,Sorrento's Pizza,180
+4/6/2020,Ben Taub Hospital Anesthesia Department,Chicken Kitchen,286
+4/6/2020,Lyndon B Johnson Hospital,Chicken Kitchen,214.5
+4/5/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
+4/4/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
+4/3/2020,University of Michigan C.S. Mott Children's Hospital,Nosh Pit Detroit,280
+4/3/2020,Houston Methodist ICU,Coffee Q,246.66
+4/3/2020,Houston Methodist Molecular Lab,Coffee Q,98.66
+4/2/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Zori Bistro,175
+4/2/2020,Delivery,Elite Events,40
+4/2/2020,Olive View-UCLA Medical Center,Los Ruizenores,106.55
+4/1/2020,Einstein Medical Center,Sorrento's Pizza,170
+4/1/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Kin,175
+4/1/2020,Davam Urgent Care,Kin,49
+4/1/2020,Delivery,Elite Events,30
+3/31/2020,Houston Methodist Molecular Lab,Burger-Chan,68.82
+3/31/2020,Ben Taub Hospital Anesthesia Department,Burger-Chan,229.41
+3/31/2020,Lyndon B Johnson Hospital,Burger-Chan,172.06
+3/30/2020,CHI St Lukes- Baylor Respiratory Department,Chicken Kitchen,128.79
+3/30/2020,Delivery,Elite Events,60
+3/30/2020,Henry Ford West Bloomfield Hospital ICU,Los Tres Amigos,82.57
+3/29/2020,Olive View-UCLA Medical Center,Winzza,98.55
+3/29/2020,Detroit Receving Hospital 4Q Surgical ICU,Nosh Pit Detroit,120
+3/28/2020,Henry Ford Allegiance Anethesia,Chilango's Burrito Bar,169
+3/28/2020,DMC Sinai Grace Hospital Anesthesia dept,Nosh Pit Detroit,120
+3/28/2020,University of Michigan C.S. Mott Children's Hospital,Nosh Pit Detroit,385
+3/27/2020,Temple University Hospital ICU,Sorrento's Pizza,180
+3/27/2020,Henry Ford West Bloomfield Hospital ICU,Twins Brunch,88.92
+3/27/2020,Houston Methodist ICU,Coffee Q,243.56
+3/26/2020,Delivery,Elite Events,15
+3/26/2020,Anaheim Regional Hospital ER,El Pollo Fino,87.15
+3/25/2020,Einstein Medical Center,Sorrento's Pizza,185
+3/25/2020,Temple University Hospital ICU,Sorrento's Pizza,185
+3/24/2020,Henry Ford Allegiance Anethesia,Chilango's Burrito Bar,112
+3/24/2020,"Progressive Care Unit at Baylor University Medic Center (Irving, TX) (Baylor, Scott, and White - Irving PCU)",Pizza Patron,62.71
+3/23/2020,Olive View-UCLA Medical Center,Asian Tasty,105.67
+3/23/2020,Houston Methodist Molecular Lab,Chicken Kitchen,85.86
+3/22/2020,Lyndon B Johnson Hospital,Chicken Kitchen,214.65
+3/22/2020,Delivery,Elite Events,30
+3/22/2020,Ben Taub Hospital Anesthesia Department,Coffee Q,324.75
+3/22/2020,Delivery,Elite Events,15
+3/21/2020,Houston Methodist ICU,Chicken Kitchen,214.65
+3/21/2020,CHI St Lukes- Baylor Respiratory Department,Coffee Q,146.14
+3/21/2020,Delivery,Elite Events,30
+3/21/2020,"Memorial Herman In the Woodlands ( 25 ED, 25 ICU)",Burger Chan,156.48
+3/20/2020,Davam Urgent Care,Burger Chan,43.82
+3/20/2020,Delivery,Elite Events,30
