@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="static/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Snacks For Med Staff</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+
+    <!-- header menu - nav -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid content">
+            <a href="/"><span class="navbar-brand mb-0 h1"><img src="static/images/lgc.png" alt="#SnacksForMedStaff" width="100"></span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/progress">Progress</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="/suggest">Suggest Hospital</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="/partners">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/press">Press</a>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <div class="content">
+
+        <!-- Welcome section, and different columns.   -->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h3 >Help Med Staff And The Economy</h1>
+                    <h3 >One Snack At A Time</h1>    
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Giving Back To The Community During COVID-19</p>
+                </div>
+            </div>
+        </div>   
+
+        <!--Operations Summary Paragraph-->
+        <div class="container-fluid padding">
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <!-- Note - we coudl leave col-md-12 or remove it. All we need is the inflection point where
+                    layout would change away from full width. -->
+                    <div class="col-md-6 my-auto">
+                        <h3 class="padding text-center">Operations Summary</h3>
+                        <p>As local economies begin to open up, Snacks For Med Staff decided to stop our fundraising efforts and operations
+                                as of May 30th, 2020. We would like to thank everyone who has supported this campaign. With your help, 
+                                we donated 3,279 meals to 23 hospitals in 5 different states in the past three months. Since all operations 
+                                are run by 5 Rice student volunteers, 100% of the donations were used to support small business and 
+                                front-line healthcare workers. All of our spending details can be found on our Progress page.</p>
+                        <p><b>We have witnessed, received, and spread so much love in the past three months! 
+                            Our hearts are full of hope and gratitude. We will carry them with us to continue spreading positivity 
+                            in our communities in other ways. Remember, no one can do everything, but everyone can do something.♥</b></p>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                            <img src="static/images/summary_team.JPG"
+                            width=100%
+                            alt="Team Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Thank you to Top Donors-->
+        <div class="container-fluid padding">
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-12 my-auto">
+                        <h3 class="padding text-center">Special Thanks to Major Donors</h3>
+                        <p>The true heroes that made this possible were our donors, not us. 
+                            We appreciate all donors and want to take a moment to recognize our major donors listed below for their 
+                            generosity and benevolence. You helped to put so many smiles on healthcare workers and small business 
+                            owners’ faces during their most difficult times.</p>
+                        <p>Note: Many donors chose to remain anonymous so their names are not on the list.</p>
+                    </div>
+                    
+                    <div class="col-md-4 mt-0">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Hall Of Fame</th>
+                                    <th scope="col">Donation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mr. Fox</td>
+                                    <td>$1,250</td>
+                                </tr>
+                                <tr>
+                                    <td>Nick Gruy</td>
+                                    <td>$600</td>
+                                </tr>
+                                <tr>
+                                    <td>Ashley Miller</td>
+                                    <td>$500</td>
+                                </tr>
+                                <tr>
+                                    <td>Collin Loewen</td>
+                                    <td>$500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4 mt-0">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Honors Club</th>
+                                    <th scope="col">Donation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Rice Business Distilled Spirits Society</td>
+                                    <td>$300</td>
+                                </tr>
+                                <tr>
+                                    <td>Avilo Oliva</td>
+                                    <td>$300</td>
+                                </tr>
+                                <tr>
+                                    <td>Alok Kulkarni</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td>Barbara Ostdiek</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td>Joel Simmons</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td>Casey Briseno</td>
+                                    <td>$250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4 mt-0">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Hive Five List</th>
+                                    <th scope="col">Donation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>James Harcourt</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob Dimon</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Rice Business Energy Association</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Vicki Deeb</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Skye Chao</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Amanda Malinoff</td>
+                                    <td>$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Nadia Deeb-Newton</td>
+                                    <td>$200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>
+            </div>
+        </div>
+            
+        <!--Owl Mask Summary Section-->
+        <div class="container-fluid padding">
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-6 my-auto">
+                            <img src="static/images/summary_mask.JPG"
+                            width=100%
+                            alt="Team Picture with Owl Mask">
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <h3 class="padding text-center">Owl Mask Summary</h3>
+                        <p>We sold 128 owl masks and used the profit from mask sale to purchase and 
+                            donate 28 masks to our restaurant partners and Montgomery County Women’s 
+                            Center. </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- 2-col: text on left, image on right. Change to container-->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <!-- Note - we coudl leave col-md-12 or remove it. All we need is the inflection point where
+                layout would change away from full width. -->
+                <div class="col-md-6 my-auto">
+                    <h3 class="padding text-center">How Can You Contribute?</h3>
+                    <p><b>1. Donate to our #SnacksForMedStaff GoFundMe campaign.</b></p></span>
+                    <p><b>2.</b>   Share our campaign within your social network.</p>
+                    <p><a href="/suggest"><b>3.</b>   Recommend a Hospital for us to start helping.</a></p>                    
+                    <p><b>4.</b>   Use hashtag #SnacksForMedStaff to help raise awareness and follow us on Instagram @SnacksForMedStaff.</p>
+                    <div class="social padding text-center">
+                        <a href="https://www.facebook.com/Snacksformedstaff-104163854593249/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/snacksformedstaff/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/SnacksforMed" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Go Fund Me Embedded Link -->
+                    <div class="gfm-embed " data-url="https://www.gofundme.com/f/snacksformedstaff/widget/large"></div>
+                    <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+                </div>
+            </div>        
+        </div>
+        
+        <div class="padding"></div>
+        <!-- "Jumbotron - " -->
+        <div class="container-fluid text-center d-block mx-auto">
+        <div class="row jumbotron">
+            <div>
+                <p class="lead">Many medical staff are working overtime without enough protection equipment. 
+                    Many local restaurants are struggling to keep doors open. </p>
+                <p class="lead">Join us to make a tangible difference for them during 
+                    this difficult time!</p>    
+            </div>       
+        </div>
+        </div> 
+
+        <div class="padding"></div>
+
+        <!-- Three column section -->
+        <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6">
+                <!-- Didn't add icons -->
+                <h3>Why Are We Raising Funds?</h3>
+                <p>Our campaign has the dual goals of supporting small business owners and boosting the morale of 
+                    medical staff who are treating COVID19 patients on the front lines. We use the funds to purchase 
+                    food and energy drinks for medical staff and purchase them from small local businesses as they are 
+                    at risk of shutdown due to quarantine guidelines in place.</p>                
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <!-- Didn't add icons -->
+                <h3 class="welcomemobtextspace">How Do We Do It?</h3>
+                <p>We have restaurant partners in most of our cities whom are small business owners that we team up with to serve medical 
+                    staff their meals. We use the donation money and coordinate the schedules. In the Houston area, we have hired our MBA catering 
+                    staff to do the deliveries themselves.</p>
+            </div>
+        </div>
+        </div>  
+
+        <div class="padding"></div>
+        <div class="padding"></div>
+
+        <!-- 2-col: text on left, image on right. Change to container-->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-6">
+                    <!-- Johns Hopkins University Tracker -->
+                    <iframe class="d-block mx-auto" title="Coronavirus COVID-19 Global Cases by Johns Hopkins CSSE" width="90%" height="400" frameborder="0" 
+                    scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://www.arcgis.com/apps/opsdashboard/index.html#/5c7f096096ed482395f6a626150366e2"></iframe>
+                </div>
+                <div class="col-md-6 my-auto text-center">
+                    <h3 class="mobtextspace">Current Global COVID&#8209;19 Status</h3>
+                    <p>Dashboard courtesy of <a href="https://coronavirus.jhu.edu/">Johns Hopkins.</a></p>
+                    
+                </div>
+            </div>        
+        </div>
+            
+        <!-- Selected Feedback Label -->
+        <div class="container-fluid padding">
+                <div class="row">
+                    <div class="mx-auto text-center">
+                            <h3>Selected Hospital Feedback</h3>
+                            <p></p>  
+                    </div>
+                </div>
+            <!-- Feedback Section -->
+            <div class="d-flex flex-wrap justify-content-center">
+                <!-- Feedback Card 1 -->
+                <div class="card mycard">
+                    <img class="card-img-top"
+                        src="static/images/_1.jpeg.jpeg"
+                        alt="Houston Methodist image">
+                    <div class="card-body">
+                        <div class="padding"></div>
+                        <h5 class="card-title text-center"><b>Houston Methodist (Texas)</b></h5>
+                        <div class="padding"></div>
+                        <p class="card-text">"They were very touched by your thoughtful donation and that it came at the perfect time of 
+                                day when needed a pick me up. They also stated that getting those snacks let them know that others are thinking 
+                                of them at this very difficult time and that really is a morale booster which is what they really need right now." 
+                        </p>                                
+                    </div>
+                </div>
+
+                <!-- Feedback Card 2 -->
+                <div class="card mycard">
+                    <img class="card-img-top"
+                        src="static/images/_2.jpeg"
+                        alt="Long Island Jewish Medical Center image">
+                    <div class="card-body">
+                        <div class="padding"></div>
+                        <h5 class="card-title text-center"><b>Long Island Jewish Medical Center (New York)</b></h5>
+                        <div class="padding"></div>
+                        <p class="card-text">"Thank you so much for the food and coffee! It really took our nurses by 
+                                surprise and one of them teared up when she saw the notes along with the food delivery. 
+                                We are working around the clock to treat a huge influx of patients every day and it is really 
+                                nice to not have to worry about packing lunch." 
+                        </p>                                
+                    </div>
+                </div>
+
+                <!-- Feedback Card 3 -->
+                <div class="card mycard">
+                    <img class="card-img-top"
+                        src="static/images/_3.jpg"
+                        alt="DMC Sinai Grace image">
+                    <div class="card-body">
+                        <div class="padding"></div>
+                        <h5 class="card-title text-center"><b>DMC Sinai Grace Hospital (Michigan)</b></h5>
+                        <div class="padding"></div>
+                        <p class="card-text">“That is so incredibly nice of you to send the food package! 
+                                It makes us feel like we are not alone in this fight against COVID-19. 
+                                Thank you so much!"
+                        </p>                                
+                    </div>
+                </div>
+
+                <!-- Feedback Card 4 -->
+                <div class="card mycard">
+                    <img class="card-img-top"
+                        src="static/images/_4.jpg"                        
+                        alt="Lyndon B Johnson image">
+                    <div class="card-body">
+                        <div class="padding"></div>
+                        <h5 class="card-title text-center"><b>Lyndon B Johnson Hospital (Texas)</b></h5>
+                        <div class="padding"></div>
+                        <p class="card-text">"Thank you all so much! We have been getting murdered at work everyday and little 
+                                gestures like this mean so much to us. Thanks again. Stay safe and inside."
+                        </p>                                
+                    </div>
+                </div>
+
+                <!-- Feedback Card 5 -->
+                <div class="card mycard">
+                    <img class="card-img-top"
+                        src="static/images/_5.jpeg"
+                        alt="Ben Taub image">
+                    <div class="card-body">
+                        <div class="padding"></div>
+                        <h5 class="card-title text-center"><b>Ben Taub Hospital (Texas)</b></h5>
+                        <div class="padding"></div>
+                        <p class="card-text">“I want to thank you for the lunch you provided the Baylor Anesthesia Department at Ben Taub
+                                yesterday. Gestures like this are heartwarming and I appreciate that you and others went to the
+                                effort to do this. I imagine you are busy people yet you found time to do this for us anyway. You
+                                and your colleagues are clearly generous people. Thank you so much for thinking of us."
+                        </p>                                
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="padding"></div>
+
+        <!-- FAQ Section -->
+        <div class="container-fluid padding">
+                <div class="row">
+                    <div class="mx-auto text-center">
+                            <h3>Frequently Asked Questions</h3>
+                            <p>Have additional questions not addressed here? Please contact us at
+                                <a href="mailto:SnacksForMedStaff@gmail.com">SnacksForMedStaff@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-10 mx-auto text-center">
+            
+                <div class="" id="accordion">
+                    <div class="card ">
+                        <div class="card-header" aria-expanded="true" aria-controls="collapseOne">
+                            <h6>
+                                <a class="accordion-toggle text-white faq" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Can I suggest a Hospital?</a>
+                            </h6>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse text-center">
+                            <div class="card-block">
+                            Yes! As long as you have a contact you can provide us with (so we can ensure the food / supplies get to the staff).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-header">
+                                <h6><a class="accordion-toggle text-white collapsed faq" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapseTwo">How often are you sending food?</a>
+                                </h6>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="card-block">
+                                We send food daily to several hospitals on our list and rotate them each 
+                                day to ensure everyone receives snacks. Each hospital is receiving roughly one delivery a week. We would LOVE to send 
+                                it 2 or even 3 times a week and will be able to if we can increase our donations.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card ">
+                        <div class="card-header">
+                                <h6><a class="accordion-toggle text-white collapsed faq" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapseThree">I know a local/small restaurant that needs business, can I recommend them?</a>
+                                </h6>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="card-block">
+                                    Of course! Just keep in mind, we will need them to be within the vicinity of the hospital and they need to be
+                                        accessible via DoorDash or a local delivery partner. In the Houston area, we've partnered with Elite Events Houston, which is a 
+                                        small catering business.  
+                                        <p>If your recommendation is not accessible by a delivery partner and you are passionate about giving them business, you can 
+                                        reach out to us directly and we can set something up as long as you’re willing to be the food delivery volunteer.</p>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="card ">
+                        <div class="card-header">
+                                <h6><a class="accordion-toggle text-white collapsed faq" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapseFour">How can I help beyond donating?</a>
+                                </h6>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="card-block">
+                                    Share our GoFundMe and hashtag #SnacksForMedStaff on your social media, with friends, and with family. 
+                                    The more people who know, the more good we can do.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card ">
+                        <div class="card-header">
+                                <h6><a class="accordion-toggle text-white collapsed faq" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapseFive">Are you a nonprofit / Can I get tax exemptions for this donation?</a>
+                                </h6>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="card-block">
+                                    <p>We are a registered non-profit organization in the State of Texas. 
+                                        If you need more information on this piece, simply email us at <a href="mailto:SnacksForMedStaff@gmail.com">SnacksForMedStaff@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="card ">
+                        <div class="card-header">
+                                <h6><a class="accordion-toggle text-white collapsed faq" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapseSix">What if I want to designate my funds to a specific hospital/restaurant/ geography?</a>
+                                </h6>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="card-block">
+                                    Please let us know via a post to our GoFundMe page or you can email us at <a href="mailto:SnacksForMedStaff@gmail.com">SnacksForMedStaff@gmail.com</a> and we will honor your request. 
+                                    The only condition is if you request a hospital that is not one we currently serve, we will need you to provide us with a contact.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-copyright text-center py-3">© 2020 Coco Ma and Kathy Harcourt</div>
+
+    <!--Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!--JQuery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--FontAwesome for social media icons-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--Bootstrap.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162585617-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-162585617-1');
+    </script> 
+    </body>
+</html>
